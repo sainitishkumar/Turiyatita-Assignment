@@ -1,0 +1,34 @@
+Database schema:
+
+Table artists
+----
+id (primary key),
+name
+description
+years_active
+otherinfo (whatever you need)
+
+Table albums
+----
+id (primary key)
+artistid (foreign key to artists table)
+name,
+releasedate
+genreid (foreign key to genres table)
+picture
+
+Table tracks
+----
+id (primary key)
+albumid (foreign key to albums table)
+name
+override_artist (overrides album artist if not null)
+playtime
+lyric
+otherstuff as needed
+
+Table genres
+----
+id (primary key)
+name
+description
