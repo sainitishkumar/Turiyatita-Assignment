@@ -1,0 +1,10 @@
+{% if playlists %}
+    <h2>List of Playlists</h2>
+    <ul>
+        {% for plist in playlists %}
+        <li><a href='/player/{{ plist.id }}'> {{ plist.playlist_name }} </a></li>
+        {% endfor %}
+    </ul>
+{% else %}
+<h1>No Playlists</h1>
+{% endif %}

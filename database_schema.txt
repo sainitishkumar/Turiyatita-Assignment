@@ -1,12 +1,26 @@
 Database schema:
 
+Table users
+----
+id (primary key),
+name
+description
+playlists (list of playlist ids of user)
+followers (list of followers for a user)
+
+Table playlists
+----
+id (primary key),
+name
+songs (list of songs in the playlist)
+view_followers bool (if playlist can be viewed by followers)
+
 Table artists
 ----
 id (primary key),
 name
 description
 years_active
-otherinfo (whatever you need)
 
 Table albums
 ----
